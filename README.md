@@ -44,3 +44,15 @@ Open your terminal or command prompt and run:
 ```bash
 aws configure
 
+AWS Access Key ID: <your_access_key>
+AWS Secret Access Key: <your_secret_key>
+Default region name: us-east-1
+Default output format: json
+aws s3 ls
+2025-11-02  my-demo-bucket-1
+2025-11-02  my-demo-bucket-2
+
+aws s3 rb s3://my-demo-bucket-1 --force
+aws s3 rb s3://my-demo-bucket-2 --force
+
+aws s3 ls
