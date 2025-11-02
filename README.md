@@ -48,9 +48,21 @@ AWS Access Key ID: <your_access_key>
 AWS Secret Access Key: <your_secret_key>
 Default region name: us-east-1
 Default output format: json
+
+🧩 Step 3: Verify Buckets Using CLI
+
+To view all buckets:
 aws s3 ls
+
+
+Expected Output:
 2025-11-02  my-demo-bucket-1
 2025-11-02  my-demo-bucket-2
+
+
+🗑️ Step 4: Delete Buckets Using CLI
+
+Use the following commands to delete both buckets:
 
 aws s3 rb s3://my-demo-bucket-1 --force
 aws s3 rb s3://my-demo-bucket-2 --force
